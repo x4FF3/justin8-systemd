@@ -1,0 +1,5 @@
+<% if $systemd::confopts ~= Array -%>
+<% $systemd::confopts.each |$conf| { -%>
+<%= $conf %>
+<% } -%>
+<% end -%>
